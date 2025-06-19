@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SensoryPro - Advanced Sensory Analysis Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>SensoryPro</h2>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#" class="nav__link" data-page="landing">Home</a></li>
+                <li><a href="#" class="nav__link" data-page="dashboard">Dashboard</a></li>
+                <li><a href="#" class="nav__link" data-page="analysis">Analysis</a></li>
+                <li><a href="#pricing" class="nav__link">Pricing</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="btn btn--outline btn--sm">Log In</button>
+                <button class="btn btn--primary btn--sm">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Landing Page -->
+    <main id="landing-page" class="page">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Advanced Sensory Analysis for Food Technologists</h1>
+                    <p class="hero__subtitle">Transform your sensory data into actionable insights with professional statistical analysis and automated reporting.</p>
+                    <div class="hero__actions">
+                        <button class="btn btn--primary btn--lg">Start Free Trial</button>
+                        <button class="btn btn--outline btn--lg">Watch Demo</button>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750300355/pplx_code_interpreter/4d2c50ba_tnmmvv.jpg" alt="Sensory Analysis Workflow" class="workflow-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title">Why Food Technologists Choose SensoryPro</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">📊</div>
+                        <h3 class="feature-card__title">Statistical Analysis</h3>
+                        <p class="feature-card__description">Advanced statistical tests including ANOVA, PCA, and preference mapping</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">📄</div>
+                        <h3 class="feature-card__title">Report Generation</h3>
+                        <p class="feature-card__description">Professional PDF reports with charts and interpretations</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">⬆️</div>
+                        <h3 class="feature-card__title">Data Upload</h3>
+                        <p class="feature-card__description">Support for CSV, Excel, and other data formats</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">☁️</div>
+                        <h3 class="feature-card__title">Cloud Storage</h3>
+                        <p class="feature-card__description">Secure cloud storage for all your sensory data</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <div class="pricing__grid">
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__name">Basic</h3>
+                        <div class="pricing-card__price">$79<span>/month</span></div>
+                        <ul class="pricing-card__features">
+                            <li>Up to 10 projects</li>
+                            <li>Basic statistical tests</li>
+                            <li>Standard reports</li>
+                            <li>Email support</li>
+                        </ul>
+                        <button class="btn btn--outline btn--full-width">Get Started</button>
+                    </div>
+                    <div class="pricing-card pricing-card--popular">
+                        <div class="pricing-card__badge">Most Popular</div>
+                        <h3 class="pricing-card__name">Professional</h3>
+                        <div class="pricing-card__price">$199<span>/month</span></div>
+                        <ul class="pricing-card__features">
+                            <li>Unlimited projects</li>
+                            <li>Advanced statistical tests</li>
+                            <li>Custom reports</li>
+                            <li>Priority support</li>
+                            <li>API access</li>
+                        </ul>
+                        <button class="btn btn--primary btn--full-width">Get Started</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="pricing-card__name">Enterprise</h3>
+                        <div class="pricing-card__price">Custom</div>
+                        <ul class="pricing-card__features">
+                            <li>All Professional features</li>
+                            <li>Custom integrations</li>
+                            <li>Dedicated support</li>
+                            <li>Training sessions</li>
+                            <li>SLA guarantee</li>
+                        </ul>
+                        <button class="btn btn--outline btn--full-width">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Landscape Section -->
+        <section class="competitive">
+            <div class="container">
+                <h2 class="section-title">See How We Compare</h2>
+                <div class="competitive__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750300222/pplx_code_interpreter/5e72286b_lmbulx.jpg" alt="Sensory Software Comparison" class="comparison-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dashboard Page -->
+    <main id="dashboard-page" class="page hidden">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <nav class="sidebar__nav">
+                    <ul class="sidebar__menu">
+                        <li><a href="#" class="sidebar__link sidebar__link--active" data-page="dashboard">📊 Dashboard</a></li>
+                        <li><a href="#" class="sidebar__link">📁 Projects</a></li>
+                        <li><a href="#" class="sidebar__link" data-page="analysis">⬆️ Upload Data</a></li>
+                        <li><a href="#" class="sidebar__link">📄 Reports</a></li>
+                        <li><a href="#" class="sidebar__link">⚙️ Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="dashboard__content">
+                <div class="dashboard__header">
+                    <h1>Dashboard</h1>
+                    <div class="dashboard__actions">
+                        <button class="btn btn--primary">New Project</button>
+                        <button class="btn btn--outline">Upload Data</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card__icon">📈</div>
+                        <div class="stat-card__content">
+                            <div class="stat-card__value">127</div>
+                            <div class="stat-card__label">Projects Completed</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__icon">🔬</div>
+                        <div class="stat-card__content">
+                            <div class="stat-card__value">1,542</div>
+                            <div class="stat-card__label">Analyses Run</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__icon">📊</div>
+                        <div class="stat-card__content">
+                            <div class="stat-card__value">389</div>
+                            <div class="stat-card__label">Reports Generated</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__icon">💾</div>
+                        <div class="stat-card__content">
+                            <div class="stat-card__value">2.3M</div>
+                            <div class="stat-card__label">Data Points Processed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Projects -->
+                <div class="dashboard__section">
+                    <h2>Recent Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-card__header">
+                                <h3>Coffee Taste Panel Study</h3>
+                                <span class="status status--success">Completed</span>
+                            </div>
+                            <p class="project-card__type">Descriptive Analysis</p>
+                            <p class="project-card__date">June 15, 2025</p>
+                            <div class="project-card__actions">
+                                <button class="btn btn--outline btn--sm">View Report</button>
+                                <button class="btn btn--primary btn--sm">Analyze</button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-card__header">
+                                <h3>Chocolate Preference Test</h3>
+                                <span class="status status--warning">In Progress</span>
+                            </div>
+                            <p class="project-card__type">Consumer Test</p>
+                            <p class="project-card__date">June 18, 2025</p>
+                            <div class="project-card__actions">
+                                <button class="btn btn--outline btn--sm">Continue</button>
+                                <button class="btn btn--primary btn--sm">Analyze</button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-card__header">
+                                <h3>Yogurt Texture Analysis</h3>
+                                <span class="status status--success">Completed</span>
+                            </div>
+                            <p class="project-card__type">Triangle Test</p>
+                            <p class="project-card__date">June 12, 2025</p>
+                            <div class="project-card__actions">
+                                <button class="btn btn--outline btn--sm">View Report</button>
+                                <button class="btn btn--primary btn--sm">Analyze</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics Chart -->
+                <div class="dashboard__section">
+                    <h2>Analytics Overview</h2>
+                    <div class="chart-container">
+                        <canvas id="analyticsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Analysis Page -->
+    <main id="analysis-page" class="page hidden">
+        <div class="analysis">
+            <aside class="sidebar">
+                <nav class="sidebar__nav">
+                    <ul class="sidebar__menu">
+                        <li><a href="#" class="sidebar__link" data-page="dashboard">📊 Dashboard</a></li>
+                        <li><a href="#" class="sidebar__link">📁 Projects</a></li>
+                        <li><a href="#" class="sidebar__link sidebar__link--active" data-page="analysis">⬆️ Upload Data</a></li>
+                        <li><a href="#" class="sidebar__link">📄 Reports</a></li>
+                        <li><a href="#" class="sidebar__link">⚙️ Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="analysis__content">
+                <div class="analysis__header">
+                    <h1>Data Analysis</h1>
+                </div>
+
+                <!-- File Upload Section -->
+                <div class="analysis__section">
+                    <h2>Upload Your Data</h2>
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-area__content">
+                            <div class="upload-area__icon">📄</div>
+                            <h3>Drop your files here or click to browse</h3>
+                            <p>Supports CSV, Excel, and other data formats</p>
+                            <input type="file" id="fileInput" class="upload-area__input" accept=".csv,.xlsx,.xls" multiple>
+                            <button class="btn btn--primary" onclick="document.getElementById('fileInput').click()">Choose Files</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistical Test Selection -->
+                <div class="analysis__section">
+                    <h2>Select Statistical Test</h2>
+                    <div class="test-selection">
+                        <div class="form-group">
+                            <label for="testSelect" class="form-label">Choose Analysis Type</label>
+                            <select id="testSelect" class="form-control">
+                                <option value="">Select a statistical test...</option>
+                                <option value="anova">Analysis of Variance (ANOVA)</option>
+                                <option value="pca">Principal Component Analysis (PCA)</option>
+                                <option value="preference">Preference Mapping</option>
+                                <option value="triangle">Triangle Test</option>
+                                <option value="hedonic">Hedonic Scaling</option>
+                                <option value="mfa">Multiple Factor Analysis (MFA)</option>
+                            </select>
+                        </div>
+                        <div class="test-description" id="testDescription">
+                            <p>Select a statistical test to see its description and parameters.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Preview -->
+                <div class="analysis__section">
+                    <h2>Data Preview</h2>
+                    <div class="data-preview">
+                        <div class="table-container">
+                            <table class="data-table" id="dataTable">
+                                <thead>
+                                    <tr>
+                                        <td colspan="5" class="no-data">No data uploaded yet</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configuration Panel -->
+                <div class="analysis__section">
+                    <h2>Analysis Configuration</h2>
+                    <div class="config-panel">
+                        <div class="config-grid">
+                            <div class="form-group">
+                                <label class="form-label">Significance Level</label>
+                                <select class="form-control">
+                                    <option value="0.05">α = 0.05</option>
+                                    <option value="0.01">α = 0.01</option>
+                                    <option value="0.10">α = 0.10</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Confidence Interval</label>
+                                <select class="form-control">
+                                    <option value="95">95%</option>
+                                    <option value="99">99%</option>
+                                    <option value="90">90%</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Report Format</label>
+                                <select class="form-control">
+                                    <option value="pdf">PDF Report</option>
+                                    <option value="html">HTML Report</option>
+                                    <option value="excel">Excel Report</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Run Analysis -->
+                <div class="analysis__section">
+                    <div class="analysis__actions">
+                        <button class="btn btn--primary btn--lg" id="runAnalysisBtn">Run Analysis</button>
+                        <button class="btn btn--outline btn--lg">Save Configuration</button>
+                    </div>
+                </div>
+
+                <!-- Results Section -->
+                <div class="analysis__section" id="resultsSection" style="display: none;">
+                    <h2>Analysis Results</h2>
+                    <div class="results-container">
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <h3>Statistical Summary</h3>
+                                <div class="result-content">
+                                    <p><strong>F-statistic:</strong> 23.45</p>
+                                    <p><strong>p-value:</strong> 0.0001</p>
+                                    <p><strong>R-squared:</strong> 0.847</p>
+                                    <p><strong>Degrees of freedom:</strong> 4, 95</p>
+                                </div>
+                            </div>
+                            <div class="result-card">
+                                <h3>Interpretation</h3>
+                                <div class="result-content">
+                                    <p>The analysis shows significant differences between treatments (p < 0.001). Post-hoc tests reveal that treatments A and C differ significantly from the control group.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results-chart">
+                            <h3>Results Visualization</h3>
+                            <canvas id="resultsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
